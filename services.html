@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Glow and Grace Beauty Salon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Allura&family=Playfair+Display:ital,wght@0,500;0,600;1,600&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="vip-navigation.js" defer></script>
+</head>
+
+<body class="vip-page vip-services">
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">G<span>✿</span></span>
+      <span><span class="brand-name">Glow and Grace</span><span class="brand-sub">BEAUTY SALON</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"
+      aria-controls="main-navigation" data-nav-toggle><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16" /></svg></button>
+    <nav id="main-navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a class="active" href="services.html" aria-current="page">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="appointment.html">Appointment</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode"><svg class="theme-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.2 15.1A8.6 8.6 0 0 1 8.9 3.8 8.8 8.8 0 1 0 20.2 15.1Z" /></svg><span>Dark Mode</span></button>
+      <a class="btn" href="appointment.html">Book Now →</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-copy">
+      <div class="eyebrow">OUR SERVICES</div>
+      <h1>Beauty Services<br>for Every You</h1>
+      <p>From glowing skin to healthy hair, from perfect nails to stunning makeup — we offer a complete range of beauty
+        services to make you look and feel your best.</p>
+      <div class="perks">
+        <div class="perk"><span class="perk-icon">♙</span><span>Premium<br>Products</span></div>
+        <div class="perk"><span class="perk-icon">♧</span><span>Skilled<br>Professionals</span></div>
+        <div class="perk"><span class="perk-icon">♢</span><span>Hygienic<br>Environment</span></div>
+        <div class="perk"><span class="perk-icon">♙</span><span>Affordable<br>Packages</span></div>
+      </div>
+    </div>
+    <div class="handwritten">Self Care<br>is Always<br>a Good Idea ♡</div>
+  </section>
+
+  <main class="services-wrap">
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">All Services</button>
+      <button class="filter-btn" data-filter="Skin Care">Skin Care</button>
+      <button class="filter-btn" data-filter="Hair Care">Hair Care</button>
+      <button class="filter-btn" data-filter="Nail Care">Nail Care</button>
+      <button class="filter-btn" data-filter="Makeup">Makeup</button>
+      <button class="filter-btn" data-filter="Body & Wellness">Body & Wellness</button>
+      <button class="filter-btn" data-filter="Waxing">Waxing</button>
+      <button class="filter-btn" data-filter="Facial Add-ons">Facial Add-ons</button>
+      <button class="filter-btn" data-filter="Bridal Packages">Bridal Packages</button>
+      <button class="filter-btn" data-filter="Other Services">Other Services</button>
+    </div>
+    <div id="servicesGrid" class="services-grid"></div>
+  </main>
+
+  <section class="cta-strip">
+    <div class="cta-script">Book Your<br>Appointment Today ♡</div>
+    <div class="steps">
+      <div class="step"><span class="step-icon">▦</span>Choose Your Service</div>
+      <div class="step"><span class="step-icon">◷</span>Pick Your Time</div>
+      <div class="step"><span class="step-icon">♡</span>Relax &amp; Enjoy</div>
+    </div>
+    <a class="btn" href="appointment.html">▦ &nbsp;Book Now&nbsp; →</a>
+  </section>
+
+  <footer>
+    <a class="brand" href="index.html">
+      <span class="brand-mark">G<span style="font-size:16px">✿</span></span>
+      <span><span class="brand-name">Glow and Grace</span><span class="brand-sub">BEAUTY SALON</span></span>
+    </a>
+    <nav><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a
+        href="gallery.html">Gallery</a><a href="appointment.html">Appointment</a><a href="contact.html">Contact</a>
+    </nav>
+    <div class="social"><span>◎</span><span>f</span><span>♪</span></div>
+    <div class="footer-note">Beautiful Skin &nbsp; | &nbsp; Healthy Hair &nbsp; | &nbsp; Happy You ♡</div>
+  </footer>
+
+  <script>
+    const services = [
+      { title: "Skin Care", tag: "Healthy Skin • Natural Glow", image: "images/new-salon-photos/Glow%20%26%20Grace%20Spa%20Treatment%20Room.png", caption: "Clear Skin, Happy You", items: [["Basic Facial (Cleansing + Scrub + Mask", "1,500"], ["Deep Cleansing Facial", "2,000"], ["Brightening Facial", "2,500"], ["Acne Treatment Facial", "2,500"], ["Anti-Aging Facial", "3,000"], ["Hydrating Facial", "2,200"], ["Gold Facial", "3,500"], ["Oxygen Facial", "3,000"], ["Fruit Facial", "2,000"], ["Dermaplaning (Face)", "2,500"], ["Skin Polishing", "2,000"], ["Face Bleach", "1,000"]] },
+      { title: "Hair Care", tag: "Stronger • Smoother • Shinier", image: "images/new-salon-photos/Modern%20Parisian%20Salon%20Shampoo%20Stations.png", caption: "Healthy Hair = Confident You", items: [["Hair Cut (Women)", "800"], ["Hair Cut (Men)", "500"], ["Blow Dry", "700"], ["Hair Spa", "1,500"], ["Deep Conditioning", "1,200"], ["Keratin Treatment", "4,000"], ["Global Hair Color", "3,500"], ["Root Touch Up", "2,000"], ["Highlights", "4,500"], ["Balayage", "5,500"], ["Hair Straightening", "4,000"], ["Hair Smoothening", "4,500"], ["Scalp Treatment", "1,500"]] },
+      { title: "Nail Care", tag: "Manicure • Pedicure • Nail Art", image: "images/new-salon-photos/Bright%20Symmetrical%20Nail%20Salon%20Interior.png", caption: "Pretty Nails, Pretty Vibes", items: [["Classic Manicure", "800"], ["Classic Pedicure", "1,000"], ["French Manicure", "1,200"], ["Spa Manicure", "1,200"], ["Spa Pedicure", "1,500"], ["Gel Manicure", "1,500"], ["Gel Pedicure", "1,800"], ["Nail Extensions (Acrylic)", "2,500"], ["Nail Extensions (Gel)", "3,000"], ["Nail Art (Simple)", "300"], ["Nail Art (Advanced)", "500+"], ["Nail Repair", "300"]] },
+      { title: "Makeup", tag: "Look Beautiful • Feel Confident", image: "images/new-salon-photos/Glow%20%26%20Grace%20Beauty%20Parlor.png", caption: "Every Look Tells a Story", items: [["Party Makeup", "2,500"], ["Bridal Makeup", "5,000"], ["Engagement Makeup", "4,000"], ["HD Makeup", "3,500"], ["Natural Makeup", "2,000"], ["Matte Makeup", "2,500"], ["Self Makeup (Workshop)", "2,000"], ["Makeup Correction", "1,500"]] },
+      { title: "Body & Wellness", tag: "Relax • Rejuvenate • Refresh", image: "images/new-salon-photos/Glow%20%26%20Grace%20Spa%20Treatment%20Room.png", caption: "Relax, Rejuvenate", items: [["Full Body Massage", "2,000"], ["Back Massage", "1,200"], ["Foot Massage", "800"], ["Aromatherapy Massage", "2,500"], ["Hot Stone Massage", "3,000"], ["Body Scrub", "1,800"], ["Body Wrap", "2,500"], ["Slimming Treatment", "3,000"], ["Detox Therapy", "2,500"], ["Steam Bath", "800"]] },
+      { title: "Waxing", tag: "Smooth • Confident • You", image: "images/new-salon-photos/Glow%20%26%20Grace%20Spa%20Treatment%20Room.png", caption: "Smooth Skin Lasts Longer", items: [["Eyebrows", "300"], ["Upper Lip", "200"], ["Chin", "200"], ["Full Face", "800"], ["Underarms", "500"], ["Arms (Full)", "1,000"], ["Arms (Half)", "600"], ["Legs (Full)", "1,500"], ["Legs (Half)", "900"], ["Bikini", "1,200"], ["Brazilian", "2,000"], ["Back", "1,000"]] },
+      { title: "Facial Add-ons", tag: "Extra Care • Extra Glow", image: "images/new-salon-photos/Glow%20%26%20Grace%20Spa%20Treatment%20Room.png", caption: "Small Add-ons, Big Difference", items: [["Under Eye Treatment", "500"], ["Lip Lightening", "500"], ["Neck Treatment", "500"], ["Face Massage", "400"], ["Oxygen Boost", "800"], ["Gold Mask", "800"], ["Collagen Mask", "700"], ["Acne Spot Treatment", "600"]] },
+      { title: "Bridal Packages", tag: "Your Big Day • Our Special Care", bridal: true, image: "images/new-salon-photos/Glow%20%26%20Grace%20Beauty%20Parlor.png", caption: "Because You Deserve the Best", items: [] },
+      { title: "Other Services", tag: "Extra Touches • Extra Care", image: "images/new-salon-photos/Glow%20%26%20Grace%20Beauty%20Reception%20(1).png", caption: "Because Details Matter", items: [["Threading (Eyebrows)", "200"], ["Threading (Upper Lip)", "150"], ["Threading (Chin)", "150"], ["Tanning Removal", "800"], ["Dark Circle Treatment", "800"], ["Facial (Express)", "1,000"], ["Clean-up", "500"], ["Bridal Trial Makeup", "2,000"]] }
+    ];
+    const makeupGallery = [
+      { image: "images/new-salon-photos/beauty%20experts/makeup/Glow%20and%20Grace%20Bridal%20Glamour.png", alt: "Bridal glamour makeup look", caption: "Bridal Glamour" },
+      { image: "images/new-salon-photos/beauty%20experts/makeup/Glow%20and%20Grace%20Bridal%20Glam.png", alt: "Bridal makeup with elegant eye makeup", caption: "Bridal Glam" },
+      { image: "images/new-salon-photos/beauty%20experts/makeup/Glow%20and%20Grace%20Bridal%20Elegance.png", alt: "Elegant bridal makeup look", caption: "Bridal Elegance" },
+      { image: "images/new-salon-photos/beauty%20experts/makeup/Glow%20and%20Grace%20Beauty%20Portrait.png", alt: "Glow and Grace beauty makeup portrait", caption: "Beauty Portrait" },
+      { image: "images/new-salon-photos/beauty%20experts/makeup/Glow%20and%20Grace%20Beauty%20Portrait%20(1).png", alt: "Glow and Grace beauty portrait with bridal makeup", caption: "Beauty Portrait" },
+      { image: "images/new-salon-photos/beauty%20experts/makeup/Gilded%20Bridal%20Grace%20Portrait.png", alt: "Gilded bridal makeup portrait", caption: "Gilded Bridal Grace" },
+      { image: "images/new-salon-photos/beauty%20experts/makeup/Emerald%20Bridal%20Glow%20at%20Glow%20and%20Grace.png", alt: "Emerald bridal makeup look", caption: "Emerald Bridal Glow" },
+      { image: "images/new-salon-photos/beauty%20experts/makeup/Elegant%20Glow%20and%20Grace%20Bridal%20Portrait.png", alt: "Elegant Glow and Grace bridal makeup portrait", caption: "Elegant Bridal" }
+    ];
+    const icons = {
+      "Skin Care": '<circle cx="16" cy="16" r="11"/><path d="M11 14q2-3 4 0m2 0q2-3 4 0M12 20q4 3 8 0M16 4v4M4 16h4"/>',
+      "Hair Care": '<path d="M16 4c-9 0-12 7-9 13 1 2 0 4-1 6m10-19c9 0 12 7 9 13-1 2 0 4 1 6M12 7c-4 4-4 10 0 15m8-15c4 4 4 10 0 15M16 8v19"/>',
+      "Nail Care": '<path d="M8 28 3 23l9-12q2-2 3 0l1 2-8 11m7-12 7-8q2-2 3 0l1 2-8 9m-2-2 5 5m-7-1 4 4"/>',
+      "Makeup": '<circle cx="16" cy="16" r="11"/><path d="M9 14q3-4 6 0m2 0q3-4 6 0M12 21q4 3 8 0M16 5v4"/>',
+      "Body & Wellness": '<path d="M16 28S3 20 5 12c1-5 7-6 11-1 4-5 10-4 11 1 2 8-11 16-11 16Z"/><path d="M16 22V9m-5 7 5-4 5 4"/>',
+      "Waxing": '<path d="M7 26 24 9m-13 1 3 3m-6 1 3 3m-6 1 3 3m14-14 3 3m-6 1 3 3"/><path d="M6 28 3 25m19-18 3-3"/>',
+      "Facial Add-ons": '<path d="M16 28S5 22 6 13C7 7 12 4 16 4s9 3 10 9c1 9-10 15-10 15Z"/><path d="M10 21q5-2 7-11m-2 7 6-2"/>',
+      "Bridal Packages": '<path d="M4 26h24M7 26V14l5 4 4-10 4 10 5-4v12M13 8l3-4 3 4"/>',
+      "Other Services": '<path d="M16 3v8m0 10v8M3 16h8m10 0h8M7 7l6 6m6 6 6 6M25 7l-6 6m-6 6-6 6"/>'
+    };
+    function priceRows(items) { return items.map(([name, price]) => `<div class="price-row"><span>${name}</span><span>Rs. ${price}</span></div>`).join("") }
+    function renderServices(filter) {
+      let list = services;
+      if (filter && filter !== "all") { list = services.filter(s => s.title === filter); }
+      document.getElementById("servicesGrid").innerHTML = list.map((s) => `
+      <section class="service-card" data-title="${s.title}">
+        <div class="service-head">
+          <div class="service-icon"><svg viewBox="0 0 32 32">${icons[s.title] || icons["Skin Care"]}</svg></div>
+          <div><h2>${s.title}</h2><p class="tagline">${s.tag.split(" • ").join(" <span>•</span> ")}</p></div>
+        </div>
+        ${s.bridal ? `
+          <div class="bridal-layout">
+            <div class="bridal-packages">
+              <div class="package"><div class="package-title"><span>Basic Bridal Package</span><span>Rs. 12,000</span></div><ul><li>Facial</li><li>Clean-up</li><li>Threading</li><li>Light Makeup</li></ul></div>
+              <div class="package"><div class="package-title"><span>Standard Bridal Package</span><span>Rs. 18,000</span></div><ul><li>Facial</li><li>Hair Spa</li><li>Manicure &amp; Pedicure</li><li>Full Makeup</li></ul></div>
+              <div class="package"><div class="package-title"><span>Premium Bridal Package</span><span>Rs. 25,000</span></div><ul><li>Deep Facial</li><li>Hair Spa + Hair Styling</li><li>Manicure &amp; Pedicure</li><li>HD Makeup + Dupatta Setting</li></ul></div>
+            </div><img class="bridal-photo" src="${s.image}" alt="Bridal makeup" loading="lazy">
+          </div>`: `
+          <div class="service-body">
+            <div class="photo-col"><img src="${s.image}" alt="${s.title}" loading="lazy" onerror="this.onerror=null;this.src='images/new-salon-photos/Glow%20%26%20Grace%20Spa%20Treatment%20Room.png'"><div class="caption">${s.caption} ♡</div></div>
+            <div class="price-list">${priceRows(s.items)}</div>
+          </div>`}
+      </section>`
+
+      ).join("");
+    }
+    renderServices("all");
+    document.querySelectorAll(".filter-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        renderServices(btn.dataset.filter);
+      });
+    });
+  </script>
+</body>
+
+</html>

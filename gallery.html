@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Glow & Grace Beauty Salon</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="vip-navigation.js" defer></script>
+</head>
+
+<body class="vip-page vip-gallery">
+
+    <header class="topbar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">G<span>✿</span></span>
+      <span><span class="brand-name">Glow and Grace</span><span class="brand-sub">BEAUTY SALON</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="main-navigation" data-nav-toggle><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16" /></svg></button>
+    <nav id="main-navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html" aria-current="page">Services</a>
+      <a class="active" href="gallery.html">Gallery</a>
+      <a href="appointment.html">Appointment</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode"><svg class="theme-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.2 15.1A8.6 8.6 0 0 1 8.9 3.8 8.8 8.8 0 1 0 20.2 15.1Z" /></svg><span>Dark Mode</span></button>
+      <a class="btn" href="appointment.html">Book Now →</a>
+    </div>
+  </header>
+
+  <div class="hero">
+    <p>OUR GALLERY</p>
+    <h1>Gallery</h1>
+    <h2>Explore our work and see the beauty we create</h2>
+    <div class="heart">♡ ~</div>
+  </div>
+
+  <div class="filter-wrap">
+    <div class="line"></div>
+    <div class="filter">
+      <button class="active" onclick="filterGallery('all',this)">⊞ All</button>
+      <button onclick="filterGallery('bridal',this)"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m3 8 5 4 4-7 4 7 5-4-2 12H5L3 8Z" /></svg> Bridal</button>
+      <button onclick="filterGallery('makeup',this)"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m4 20 10-10m-3-3 3 3m-6-6 3-3 6 6-3 3M3 21l4-1" /></svg> Makeup</button>
+      <button onclick="filterGallery('hair',this)"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="6" cy="6" r="3" /><circle cx="6" cy="18" r="3" /><path d="m8 8 12 12M8 16 20 4" /></svg> Hair</button>
+      <button onclick="filterGallery('nails',this)"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 21V8a4 4 0 0 1 8 0v13H8Z" /><path d="M8 13h8M10 4V2m4 2V2" /></svg> Nails</button>
+      <!-- <button onclick="filterGallery('skincare',this)">✧ Skincare</button>
+      <button onclick="filterGallery('spaces',this)">♡ Salon Spaces</button> -->
+    </div>
+    <div class="line"></div>
+  </div>
+
+  <div class="grid">
+    <div class="item makeup bridal"><img src="images/new-salon-photos/Glow%20%26%20Grace%20Beauty%20Parlor.png"
+        alt="Glow &amp; Grace makeup studio" loading="lazy">
+      <p>MAKEUP STUDIO</p>
+    </div>
+    <div class="item bridal"><img src="nails/hairs/bridal/Bridal%20Glow%20and%20Grace%20Portrait.png"
+        alt="Bridal Glow and Grace portrait" loading="lazy">
+      <p>BRIDAL GLOW</p>
+    </div>
+    <div class="item bridal"><img src="nails/hairs/bridal/Elegant%20Glow%20and%20Grace%20Bridal%20Portrait%20(1).png"
+        alt="Elegant Glow and Grace bridal portrait" loading="lazy">
+      <p>ELEGANT BRIDAL PORTRAIT</p>
+    </div>
+    <div class="item bridal"><img src="nails/hairs/bridal/Glamorous%20Maroon%20Bridal%20Portrait.png"
+        alt="Glamorous maroon bridal portrait" loading="lazy">
+      <p>MAROON BRIDAL GLAM</p>
+    </div>
+    <div class="item bridal"><img src="nails/hairs/bridal/Glow%20and%20Grace%20Bridal%20Glamour%20(1).png"
+        alt="Glow and Grace bridal glamour" loading="lazy">
+      <p>BRIDAL GLAMOUR</p>
+    </div>
+    <div class="item bridal"><img src="nails/hairs/bridal/Golden%20Glow%20Bridal%20Portrait.png"
+        alt="Golden glow bridal portrait" loading="lazy">
+      <p>GOLDEN GLOW BRIDE</p>
+    </div>
+    <div class="item bridal"><img src="nails/hairs/bridal/Golden%20Grace%20Bridal%20Portrait%20(1).png"
+        alt="Golden Grace bridal portrait" loading="lazy">
+      <p>GOLDEN GRACE PORTRAIT</p>
+    </div>
+    <div class="item bridal"><img src="nails/hairs/bridal/Golden%20Grace%20Bridal%20Portrait.png"
+        alt="Golden Grace bridal portrait" loading="lazy">
+      <p>GOLDEN GRACE BRIDAL</p>
+    </div>
+    <div class="item bridal"><img src="nails/hairs/bridal/Opulent%20Red%20and%20Gold%20Bridal%20Portrait.png"
+        alt="Opulent red and gold bridal portrait" loading="lazy">
+      <p>RED &amp; GOLD BRIDAL</p>
+    </div>
+    <div class="item makeup"><img
+        src="images/new-salon-photos/beauty%20experts/makeup/Glow%20and%20Grace%20Bridal%20Glamour.png"
+        alt="Bridal glamour makeup look" loading="lazy">
+      <p>BRIDAL GLAMOUR</p>
+    </div>
+    <div class="item makeup"><img
+        src="images/new-salon-photos/beauty%20experts/makeup/Glow%20and%20Grace%20Bridal%20Glam.png"
+        alt="Bridal glam makeup look" loading="lazy">
+      <p>BRIDAL GLAM</p>
+    </div>
+    <div class="item makeup"><img
+        src="images/new-salon-photos/beauty%20experts/makeup/Glow%20and%20Grace%20Bridal%20Elegance.png"
+        alt="Elegant bridal makeup look" loading="lazy">
+      <p>BRIDAL ELEGANCE</p>
+    </div>
+    <div class="item makeup"><img
+        src="images/new-salon-photos/beauty%20experts/makeup/Glow%20and%20Grace%20Beauty%20Portrait.png"
+        alt="Glow and Grace beauty makeup portrait" loading="lazy">
+      <p>BEAUTY PORTRAIT</p>
+    </div>
+    <div class="item makeup"><img
+        src="images/new-salon-photos/beauty%20experts/makeup/Glow%20and%20Grace%20Beauty%20Portrait%20(1).png"
+        alt="Glow and Grace bridal beauty portrait" loading="lazy">
+      <p>BRIDAL BEAUTY</p>
+    </div>
+    <div class="item makeup"><img
+        src="images/new-salon-photos/beauty%20experts/makeup/Gilded%20Bridal%20Grace%20Portrait.png"
+        alt="Gilded bridal makeup portrait" loading="lazy">
+      <p>GILDED BRIDAL</p>
+    </div>
+    <div class="item makeup"><img
+        src="images/new-salon-photos/beauty%20experts/makeup/Emerald%20Bridal%20Glow%20at%20Glow%20and%20Grace.png"
+        alt="Emerald bridal makeup look" loading="lazy">
+      <p>EMERALD BRIDAL GLOW</p>
+    </div>
+    <div class="item makeup"><img
+        src="images/new-salon-photos/beauty%20experts/makeup/Elegant%20Glow%20and%20Grace%20Bridal%20Portrait.png"
+        alt="Elegant Glow and Grace bridal makeup portrait" loading="lazy">
+      <p>ELEGANT BRIDAL</p>
+    </div>
+    <div class="item nails"><img src="images/new-salon-photos/Bright%20Modern%20Spa%20Pedicure%20Lounge.png"
+        alt="Bright modern spa pedicure lounge" loading="lazy">
+      <p>PEDICURE LOUNGE</p>
+    </div>
+    <div class="item nails"><img src="images/new-salon-photos/Bright%20Symmetrical%20Nail%20Salon%20Interior.png"
+        alt="Bright symmetrical nail salon interior" loading="lazy">
+      <p>NAIL SALON</p>
+    </div>
+    <div class="item nails"><img src="nails/WhatsApp%20Image%202026-11-14%20at%201.35.35%20AM%20(1).jpeg"
+        alt="Pink glitter French tip nail art" loading="lazy">
+      <p>GLITTER FRENCH TIPS</p>
+    </div>
+    <div class="item nails"><img src="nails/WhatsApp%20Image%202026-11-14%20at%201.35.35%20AM.jpeg"
+        alt="Burgundy tip nails with gold details" loading="lazy">
+      <p>BURGUNDY &amp; GOLD</p>
+    </div>
+    <div class="item nails"><img src="nails/WhatsApp%20Image%202026-11-14%20at%201.35.36%20AM%20(1).jpeg"
+        alt="Pink and red heart nail art" loading="lazy">
+      <p>HEART NAIL ART</p>
+    </div>
+    <div class="item nails"><img src="nails/WhatsApp%20Image%202026-11-14%20at%201.35.36%20AM%20(2).jpeg"
+        alt="Floral nail art with delicate accents" loading="lazy">
+      <p>FLORAL ACCENTS</p>
+    </div>
+    <div class="item nails"><img src="nails/WhatsApp%20Image%202026-11-14%20at%201.35.36%20AM.jpeg"
+        alt="Iridescent chrome nails with crystal accents" loading="lazy">
+      <p>IRIDESCENT CHROME</p>
+    </div>
+    <div class="item nails"><img src="nails/WhatsApp%20Image%202026-11-14%20at%201.35.37%20AM%20(1).jpeg"
+        alt="Soft pink glitter nail design" loading="lazy">
+      <p>SOFT PINK GLITTER</p>
+    </div>
+    <div class="item nails"><img src="nails/WhatsApp%20Image%202026-11-14%20at%201.35.37%20AM%20(2).jpeg"
+        alt="White nails with silver crystal accents" loading="lazy">
+      <p>WHITE &amp; SILVER CRYSTALS</p>
+    </div>
+    <div class="item nails"><img src="nails/WhatsApp%20Image%202026-11-14%20at%201.35.37%20AM.jpeg"
+        alt="Pink shimmer almond nail art" loading="lazy">
+      <p>PINK SHIMMER</p>
+    </div>
+    <div class="item spaces"><img src="images/new-salon-photos/Glow%20%26%20Grace%20Beauty%20Reception%20(1).png"
+        alt="Glow &amp; Grace beauty reception" loading="lazy">
+      <p>RECEPTION</p>
+    </div>
+    <div class="item skincare"><img src="images/new-salon-photos/Glow%20%26%20Grace%20Spa%20Treatment%20Room.png"
+        alt="Glow &amp; Grace facial and skincare treatment room" loading="lazy">
+      <p>FACIAL &amp; SKINCARE</p>
+    </div>
+    <div class="item hair"><img src="images/new-salon-photos/Modern%20Parisian%20Salon%20Shampoo%20Stations.png"
+        alt="Modern salon shampoo stations for hair services" loading="lazy">
+      <p>HAIR SERVICES</p>
+    </div>
+    <div class="item hair"><img src="nails/hairs/Bridal%20Cascading%20Curls%20by%20Glow%20and%20Grace.png"
+        alt="Bridal cascading curls by Glow and Grace" loading="lazy">
+      <p>BRIDAL CASCADING CURLS</p>
+    </div>
+    <div class="item hair"><img src="nails/hairs/Elegant%20Bridal%20Ponytail%20with%20Gold%20Embellishments.png"
+        alt="Elegant bridal ponytail with gold embellishments" loading="lazy">
+      <p>ELEGANT BRIDAL PONYTAIL</p>
+    </div>
+    <div class="item hair"><img src="nails/hairs/Glossy%20Highlighted%20Waves%20at%20Glow%20and%20Grace.png"
+        alt="Glossy highlighted waves at Glow and Grace" loading="lazy">
+      <p>GLOSSY HIGHLIGHTED WAVES</p>
+    </div>
+    <div class="item hair"><img src="nails/hairs/Glow%20and%20Grace%20Bridal%20Updo.png"
+        alt="Glow and Grace bridal updo" loading="lazy">
+      <p>BRIDAL UPDO</p>
+    </div>
+    <div class="item hair"><img src="nails/hairs/Glow%20and%20Grace%20Floral%20Bubble%20Hairstyle.png"
+        alt="Glow and Grace floral bubble hairstyle" loading="lazy">
+      <p>FLORAL BUBBLE HAIRSTYLE</p>
+    </div>
+    <div class="item hair"><img src="nails/hairs/Golden%20Floral%20Bridal%20Chignon.png"
+        alt="Golden floral bridal chignon" loading="lazy">
+      <p>GOLDEN FLORAL CHIGNON</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="col">
+      <div class="flogo"><svg class="ui-icon flower-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="5" r="2.3" /><circle cx="18" cy="9" r="2.3" /><circle cx="16" cy="16" r="2.3" /><circle cx="8" cy="16" r="2.3" /><circle cx="6" cy="9" r="2.3" /><circle cx="12" cy="11" r="2.2" /></svg><br>Glow &amp; Grace<small>BEAUTY SALON</small></div>
+      <div class="tag">Enhance Your Beauty, Embrace Your Grace</div>
+      <div style="text-align:center;font-size:22px;margin-top:8px">♡</div>
+    </div>
+    <div class="col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">› Home</a></li>
+        <li><a href="about.html">› About</a></li>
+        <li><a href="services.html">› Services</a></li>
+        <li><a href="gallery.html">› Gallery</a></li>
+        <li><a href="appointment.html">› Appointment</a></li>
+        <li><a href="contact.html">› Contact</a></li>
+      </ul>
+    </div>
+    <div class="col contact">
+      <h3>Contact Us</h3>
+      <p><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z" /><circle cx="12" cy="10" r="2.5" /></svg> Gulgasht, Multan</p>
+      <p><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 3h4l2 5-3 2a15 15 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2C10 20 4 14 3 5a2 2 0 0 1 2-2Z" /></svg> +92 300 1234567</p>
+      <p><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></svg> glowandgrace@gmail.com</p>
+      <p><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></svg> 10:00 AM – 11:00 PM</p>
+    </div>
+    <div class="bottom">Glow & Grace Beauty Salon • Gallery by Zoha Noor • © 2026 All Rights Reserved</div>
+  </div>
+
+  <script>
+    function filterGallery(cat, btn) {
+      document.querySelectorAll('.filter button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.item').forEach(item => {
+        if (cat === 'all' || item.classList.contains(cat)) { item.classList.remove('hide'); }
+        else { item.classList.add('hide'); }
+      });
+    }
+  </script>
+</body>
+
+</html>

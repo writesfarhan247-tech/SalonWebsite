@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointment | Glow & Grace Beauty Salon</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Allura&family=Playfair+Display:ital,wght@0,500;0,600;1,600&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="vip-navigation.js" defer></script>
+</head>
+
+<body class="vip-page vip-appointment">
+   <header class="topbar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">G<span>✿</span></span>
+      <span><span class="brand-name">Glow and Grace</span><span class="brand-sub">BEAUTY SALON</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="main-navigation" data-nav-toggle><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16" /></svg></button>
+    <nav id="main-navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a class="active" href="appointment.html" aria-current="page">Appointment</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode"><svg class="theme-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.2 15.1A8.6 8.6 0 0 1 8.9 3.8 8.8 8.8 0 1 0 20.2 15.1Z" /></svg><span>Dark Mode</span></button>
+      <a class="btn" href="appointment.html">Book Now →</a>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="hero-left"><span class="script">Book Your</span>
+      <h1>Appointment</h1>
+      <p>Your Beauty • Our Priority</p>
+      <div class="heart">──────── ♥ ────────</div>
+      <p>Relax &nbsp; • &nbsp; Refresh &nbsp; • &nbsp; Rejuvenate</p>
+    </div>
+    <div class="hero-right">
+      <div class="image-logo">
+        <div class="crown">♕</div>
+        <h2>Glow &amp; Grace</h2>
+        <p>BEAUTY SALON</p>
+      </div>
+    </div>
+  </section>
+  <main class="content">
+    <section class="why">
+      <span class="script">Why Choose Us?</span>
+      <h2>Your Beauty, Our Care</h2>
+      <p>At Glow &amp; Grace, we believe every client is unique and deserves personalized care. Book your appointment
+        today and let us bring out the best version of you!</p>
+      <div class="feature"><span>♧</span>
+        <p>Professional<br>&amp; Experienced Staff</p>
+      </div>
+      <div class="feature"><span>♡</span>
+        <p>Premium Quality<br>Products</p>
+      </div>
+      <div class="feature"><span>✧</span>
+        <p>Clean &amp; Hygienic<br>Environment</p>
+      </div>
+      <div class="feature"><span>◷</span>
+        <p>Flexible Timings<br>for Your Convenience</p>
+      </div>
+      <div class="quote">Because You Deserve<br>to Feel Beautiful</div>
+      <div class="heart" style="text-align:center">───── ♥ ─────</div>
+    </section>
+    <section class="booking" id="booking">
+      <h2>Book Your Appointment</h2>
+      <p class="description">Fill in the details below and we'll confirm your slot as soon as possible.</p>
+      <form id="appointmentForm" novalidate>
+        <div class="field"><label for="name">Full Name *</label><input id="name" name="name" type="text"
+            placeholder="Your name"><span class="error-msg" id="nameError">Please enter a valid name (only letters, min
+            3 characters)</span></div>
+        <div class="field"><label for="phone">Phone Number *</label><input id="phone" name="phone" type="tel"
+            placeholder="Your phone number"><span class="error-msg" id="phoneError">Please enter a valid phone number
+            (e.g. 03001234567)</span></div>
+        <div class="field full"><label for="email">Email Address</label><input id="email" name="email" type="email"
+            placeholder="example@gmail.com"><span class="error-msg" id="emailError">Please enter a valid email
+            address</span></div>
+        <div class="field"><label for="service">Service *</label><select id="service" name="service">
+            <option value="">Select a service</option>
+            <option>Facial &amp; Skin Care</option>
+            <option>Hair Styling</option>
+            <option>Hair Cut &amp; Treatment</option>
+            <option>Bridal Makeup</option>
+            <option>Party Makeup</option>
+            <option>Manicure &amp; Pedicure</option>
+            <option>Waxing &amp; Threading</option>
+            <option>Mehndi</option>
+          </select><span class="error-msg" id="serviceError">Please select a service</span></div>
+        <div class="field"><label for="date">Preferred Date *</label><input id="date" name="date" type="date"><span
+            class="error-msg" id="dateError">Please select today or a future date</span></div>
+        <div class="field"><label for="time">Preferred Time *</label><select id="time" name="time">
+            <option value="">Select time</option>
+            <option>10:00 AM</option>
+            <option>11:00 AM</option>
+            <option>12:00 PM</option>
+            <option>1:00 PM</option>
+            <option>2:00 PM</option>
+            <option>3:00 PM</option>
+            <option>4:00 PM</option>
+            <option>5:00 PM</option>
+            <option>6:00 PM</option>
+            <option>7:00 PM</option>
+            <option>8:00 PM</option>
+            <option>9:00 PM</option>
+            <option>10:00 PM</option>
+            <option>11:00 PM</option>
+          </select><span class="error-msg" id="timeError">Please select your preferred time</span></div>
+        <div class="field full"><label for="notes">Additional Notes (Optional)</label><textarea id="notes" name="notes"
+            placeholder="Any special request?"></textarea></div>
+        <button class="submit" type="submit">♧ &nbsp; Confirm Appointment</button>
+      </form>
+      <div class="contact">
+        <div><span style="color:#984a45;font-size:20px">☎</span><br><span style="color:#85858d">Need help? Call us
+            at</span><br><strong>+92 300 1234567</strong></div>
+        <div><span style="color:#984a45;font-size:20px">⌖</span><br><span style="color:#85858d">Visit us
+            at</span><br><strong>Gulgasht Colony, Multan, Pakistan</strong></div>
+      </div>
+    </section>
+  </main>
+  <section class="promo">
+    <div class="promo-img"></div>
+    <div><span class="script">Self Care Isn't a Luxury</span>
+      <h2>It's a Necessity</h2>
+      <div class="heart">──── ♥ ────</div>
+    </div>
+    <a href="#booking">Book Now ↗</a>
+  </section>
+  <section class="information">
+    <div class="info-item"><span class="info-icon">◷</span>
+      <div>
+        <p>Opening Hours</p><strong>10 AM to 11 PM</strong>
+      </div>
+    </div>
+    <div class="separator"></div>
+    <div class="info-item"><span class="info-icon">⌖</span>
+      <div>
+        <p>Visit Us At</p><strong>Gulgasht Colony,<br>Multan, Pakistan</strong>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-top">
+      <a href="index.html" class="logo">Glow &amp; Grace<span>BEAUTY SALON</span></a>
+      <div>
+        <nav class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a
+            href="services.html">Services</a><a href="gallery.html">Gallery</a><a
+            href="appointment.html">Appointment</a><a href="contact.html">Contact</a></nav>
+        <div class="social">f ◎ ♪ ▶</div>
+      </div>
+      <div class="newsletter"><strong>Stay Connected</strong><br>Follow us for beauty tips and offers.<form
+          id="newsletterForm"><input type="email" placeholder="Your email address" aria-label="Your email address"
+            required><button type="submit">➜</button></form>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Glow &amp; Grace Beauty Salon. All rights reserved.</span><span>♥ Beauty •
+        Confidence • You</span></div>
+  </footer>
+  <script>
+    const dateField = document.getElementById("date");
+    const appointmentForm = document.getElementById("appointmentForm");
+    function getToday() { const now = new Date(); return new Date(now.getTime() - now.getTimezoneOffset() * 60000).toISOString().split("T")[0]; }
+    dateField.min = getToday();
+    function showError(inputId, errorId, isValid) { const input = document.getElementById(inputId); const err = document.getElementById(errorId); if (isValid) { input.classList.remove("error"); err.classList.remove("show"); } else { input.classList.add("error"); err.classList.add("show"); } return isValid; }
+    function validateName() { const v = document.getElementById("name").value.trim(); return showError("name", "nameError", /^[A-Za-z\s]{3,}$/.test(v)); }
+    function validatePhone() { const v = document.getElementById("phone").value.trim().replace(/[\s-]/g, ""); const clean = v.startsWith("+92") ? "0" + v.slice(3) : v; return showError("phone", "phoneError", /^03\d{9}$/.test(clean)); }
+    function validateEmail() { const v = document.getElementById("email").value.trim(); if (v === "") return showError("email", "emailError", true); return showError("email", "emailError", /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)); }
+    function validateService() { const v = document.getElementById("service").value; return showError("service", "serviceError", v !== ""); }
+    function validateDate() { const v = dateField.value; if (v === "") return showError("date", "dateError", false); return showError("date", "dateError", v >= getToday()); }
+    function validateTime() { const v = document.getElementById("time").value; return showError("time", "timeError", v !== ""); }
+    ["name", "phone", "email", "service", "date", "time"].forEach(id => { document.getElementById(id).addEventListener("input", () => { if (id === "name") validateName(); if (id === "phone") validatePhone(); if (id === "email") validateEmail(); if (id === "service") validateService(); if (id === "date") validateDate(); if (id === "time") validateTime(); }); document.getElementById(id).addEventListener("change", () => { if (id === "name") validateName(); if (id === "phone") validatePhone(); if (id === "email") validateEmail(); if (id === "service") validateService(); if (id === "date") validateDate(); if (id === "time") validateTime(); }); });
+    appointmentForm.addEventListener("submit", function (event) { event.preventDefault(); const okName = validateName(); const okPhone = validatePhone(); const okEmail = validateEmail(); const okService = validateService(); const okDate = validateDate(); const okTime = validateTime(); if (!okName || !okPhone || !okEmail || !okService || !okDate || !okTime) { return; } const name = document.getElementById("name").value.trim(); const service = document.getElementById("service").value; const date = dateField.value; const time = document.getElementById("time").value; alert("Thank you, " + name + "!\n\n" + "Your appointment request has been recorded in this demo.\n\n" + "Service: " + service + "\n" + "Date: " + date + "\n" + "Time: " + time + "\n\n" + "Glow & Grace Beauty Salon"); appointmentForm.reset(); dateField.min = getToday(); });
+    document.getElementById("newsletterForm").addEventListener("submit", function (event) { event.preventDefault(); const newsletterEmail = this.querySelector('input[type="email"]'); if (!newsletterEmail.checkValidity()) { newsletterEmail.reportValidity(); return; } alert("Thank you for your interest!"); this.reset(); });
+  </script>
+</body>
+
+</html>
