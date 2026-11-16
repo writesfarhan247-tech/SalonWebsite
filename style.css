@@ -1211,7 +1211,27 @@ html.dark-mode .vip-page {
 
 /* Services page */
 .vip-services > .hero {
-  display: none;
+  display: grid;
+  width: 100%;
+  min-height: 570px;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 0.75fr);
+  align-items: center;
+  gap: clamp(24px, 5vw, 72px);
+  margin: 0;
+  padding: clamp(56px, 8vw, 104px) max(24px, calc((100% - var(--page-width)) / 2));
+  overflow: hidden;
+  background:
+    linear-gradient(90deg,
+      color-mix(in srgb, var(--blush) 92%, transparent) 0%,
+      color-mix(in srgb, var(--cream) 88%, transparent) 52%,
+      color-mix(in srgb, var(--blush) 70%, transparent) 100%),
+    url("images/new-salon-photos/Glow%20%26%20Grace%20Beauty%20Parlor.png") center 55% / cover no-repeat;
+}
+
+.vip-services .hero-copy,
+.vip-services .handwritten {
+  position: relative;
+  z-index: 1;
 }
 
 .vip-services .hero-copy {
@@ -1251,6 +1271,7 @@ html.dark-mode .vip-page {
   flex: 0 0 auto;
   place-items: center;
   border-radius: 50%;
+  border: 1px solid var(--rose-light);
   background: var(--cream);
   color: var(--rose);
   font-size: 1.2rem;
